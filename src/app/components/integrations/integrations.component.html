@@ -1,0 +1,25 @@
+<section class="section" id="integrations">
+  <div class="container">
+    <h2 class="section-title">Integrations</h2>
+
+    <div class="integrations-grid">
+      @for (integration of integrations; track integration.name) {
+        <div class="integration-card">
+          <div class="card-top">
+            <span class="integration-category">{{ integration.category }}</span>
+          </div>
+          <h3 class="integration-name">{{ integration.name }}</h3>
+          <p class="integration-desc">{{ integration.description }}</p>
+          <div class="integration-footer">
+            <span class="used-label">Used in:</span>
+            <div class="used-tags">
+              @for (project of integration.usedIn; track project) {
+                <span class="used-tag">{{ project }}</span>
+              }
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>
