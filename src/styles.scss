@@ -22,6 +22,23 @@
   --gradient-start: #4a9eed;
   --gradient-end: #7c3aed;
   --section-gap: 100px;
+  --bg-navbar-scrolled: rgba(15, 15, 15, 0.95);
+  --shadow-card: 0 12px 40px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="light"] {
+  --bg-primary: #f8f9fa;
+  --bg-secondary: #ffffff;
+  --bg-card: #f0f1f3;
+  --bg-card-hover: #e8e9ec;
+  --text-primary: #1a1a2e;
+  --text-secondary: #555770;
+  --text-muted: #8b8da0;
+  --accent-glow: rgba(74, 158, 237, 0.12);
+  --border: #e0e1e6;
+  --border-hover: #c8c9d0;
+  --bg-navbar-scrolled: rgba(248, 249, 250, 0.95);
+  --shadow-card: 0 12px 40px rgba(0, 0, 0, 0.08);
 }
 
 html {

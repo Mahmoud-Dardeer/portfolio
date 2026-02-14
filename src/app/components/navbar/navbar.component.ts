@@ -1,5 +1,6 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ThemeService } from '../../services/theme.service';
 
 @Component({
   selector: 'app-navbar',
@@ -11,6 +12,7 @@ import { CommonModule } from '@angular/common';
 export class NavbarComponent {
   isScrolled = false;
   isMobileMenuOpen = false;
+  themeService = inject(ThemeService);
 
   navLinks = [
     { label: 'Home', href: '#home' },
