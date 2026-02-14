@@ -10,9 +10,4 @@ import { AnimateOnScrollDirective } from '../../directives/animate-on-scroll.dir
   styleUrl: './education.component.scss'
 })
 export class EducationComponent {
-  professionalDevelopment = [
-    'Dale Carnegie Seminar: Effective Communications & Human Relations',
-    'BBSA & Graduate Resource Program - Future Generation Foundation (FGF)',
-    'Human Resources Track - FGF'
-  ];
 }

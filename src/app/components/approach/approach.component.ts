@@ -52,7 +52,7 @@ export class ApproachComponent {
       icon: 'agile',
       title: 'Agile Delivery',
       description: 'Iterative development with continuous feedback, ensuring on-time delivery with quality.',
-      practices: ['Scrum Methodology', 'Sprint Planning', 'Stakeholder Communication']
+      practices: ['Scrum Methodology', 'Sprint Planning', 'Stakeholder Communication', 'Continuous Integration']
     }
   ];
 }

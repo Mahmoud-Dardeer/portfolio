@@ -35,11 +35,6 @@ export class SkillsComponent {
       title: 'Testing',
       icon: 'check',
       skills: ['Unit Testing', 'Integration Testing']
-    },
-    {
-      title: 'Personal Skills',
-      icon: 'star',
-      skills: ['Problem Solving & Analytical Thinking', 'Fast Learner & Self-Motivated', 'Strong Communication & Presentation', 'Team Player & Independent Worker', 'Able to Work Under Pressure']
     }
   ];
 }

@@ -98,10 +98,11 @@ export class ProjectsComponent {
       company: 'DevopSolution',
       description: 'Client and admin portal for seasonal job applications related to the Haj season with full workflow management.',
       highlights: [
-        'Applicant job matching and qualification checks',
-        'Admin workflows for contract issuance and approval',
-        'Payroll generation and clearance handling',
-        'Self and manager applicant evaluations'
+        'Applicant job matching with automated qualification and eligibility checks',
+        'Admin workflows for contract issuance, multi-level approval, and digital signing',
+        'Payroll generation with salary calculation and end-of-season clearance handling',
+        'Self-evaluation and manager-evaluation forms with competency-based rating',
+        'Role-based dashboards for HR, managers, and applicants with real-time status tracking'
       ],
       techStack: ['ASP.NET Core MVC', 'EF Core', 'SQL Server', 'Angular', 'Identity Server'],
       metric: 'Automated payroll generation & clearance'
@@ -112,9 +113,11 @@ export class ProjectsComponent {
       company: 'DevopSolution',
       description: 'AI-powered chat system leveraging Azure AI Foundry with custom agent creation supporting configurable instructions, temperature, and knowledge sources.',
       highlights: [
-        'Custom AI agents with configurable parameters',
-        'Intelligent conversational flows for domain-specific queries',
-        'Secure backend for agent deployment and monitoring'
+        'Custom AI agent creation with configurable instructions, temperature, and response behavior',
+        'Knowledge source attachment allowing agents to reference uploaded documents and datasets',
+        'Intelligent conversational flows tailored for domain-specific queries and business use cases',
+        'Chat history management with session persistence and context-aware follow-up responses',
+        'Secure backend for agent deployment, usage monitoring, and access control'
       ],
       techStack: ['Azure AI Foundry', 'OpenAI API', '.NET Core', 'Angular'],
       metric: 'Azure AI Foundry + OpenAI API integration'
@@ -139,12 +142,29 @@ export class ProjectsComponent {
       company: 'DevopSolution',
       description: 'Dual-portal system (client website + admin panel) for managing Umrah and Haj packages including flights and hotels for Makkah & Madinah.',
       highlights: [
-        'Package display, booking, and management system',
-        'Dynamic dashboards for package publication and booking approvals',
-        'Clean Architecture implementation for scalability'
+        'Client-facing website for browsing, comparing, and booking Umrah and Haj packages with flight and hotel options',
+        'Admin panel for package creation, publication scheduling, pricing management, and booking approvals',
+        'Dynamic dashboards with booking statistics, revenue tracking, and package performance analytics',
+        'Multi-step booking flow with passenger details, document uploads, and payment confirmation',
+        'Clean Architecture implementation ensuring long-term scalability and maintainability'
       ],
       techStack: ['ASP.NET Core MVC', 'EF Core', 'SQL Server', 'Angular'],
       metric: 'Built with Clean Architecture for scalability'
+    },
+    {
+      title: 'Tasheer',
+      subtitle: 'Pilgrimage Services Platform',
+      company: 'DevopSolution',
+      description: 'End-to-end pilgrimage services platform managing pilgrim records, scalable booking systems, and service coordination for Hajj and Umrah operations.',
+      highlights: [
+        'Pilgrim registration and record management with document uploads, verification, and profile tracking',
+        'Scalable booking system handling high-volume seasonal demand with optimized processing pipelines',
+        'Service coordination workflows managing transport, accommodation, and visa processing end-to-end',
+        'Role-based access control with dedicated portals for admins, agents, and service providers',
+        'Admin dashboards for real-time tracking of pilgrim status, booking progress, and service fulfillment'
+      ],
+      techStack: ['ASP.NET Core MVC', 'EF Core', 'SQL Server', 'Angular', 'Identity Server'],
+      metric: 'Scalable seasonal booking platform'
     },
     {
       title: 'POS',
@@ -168,9 +188,11 @@ export class ProjectsComponent {
       company: 'Centro CDX',
       description: 'Real-time patient monitoring system integrated with medical devices to automatically retrieve vital signs like blood pressure and heart rate.',
       highlights: [
-        'Medical device integration for vital signs retrieval',
-        'Real-time alerts when readings exceed safe thresholds',
-        'Health trend dashboards for proactive medical response'
+        'Medical device integration for automatic retrieval of blood pressure, heart rate, and other vital signs',
+        'Real-time SignalR-powered alerts instantly notifying nursing staff when readings exceed safe thresholds',
+        'Health trend dashboards with historical charts for proactive medical response and early intervention',
+        'Patient profile linking for continuous monitoring across multiple visits and care sessions',
+        'Configurable threshold settings per patient allowing personalized alert rules based on medical history'
       ],
       techStack: ['Angular', '.NET Core', 'SQL Server', 'SignalR'],
       metric: 'Real-time medical device alerts via SignalR'
