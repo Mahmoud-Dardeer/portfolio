@@ -8,6 +8,7 @@ interface Experience {
   period: string;
   points: string[];
   techTags: string[];
+  award?: { label: string; image: string };
 }
 
 @Component({
@@ -18,6 +19,16 @@ interface Experience {
   styleUrl: './experience.component.scss'
 })
 export class ExperienceComponent {
+  selectedAward: string | null = null;
+
+  openAward(image: string): void {
+    this.selectedAward = image;
+  }
+
+  closeAward(): void {
+    this.selectedAward = null;
+  }
+
   experiences: Experience[] = [
     {
       company: 'DevopSolution',
@@ -39,7 +50,8 @@ export class ExperienceComponent {
         'Reduced invoice rejections through robust SDK-based XML validation and automated digital signing.',
         'Contributed to POS retail system and mentored junior developers in gRPC and WPF.'
       ],
-      techTags: ['Angular', '.NET Core', 'ZATCA SDK', 'gRPC', 'WPF', 'SAP', 'GemBox']
+      techTags: ['Angular', '.NET Core', 'ZATCA SDK', 'gRPC', 'WPF', 'SAP', 'GemBox'],
+      award: { label: 'Certificate of Appreciation 2023', image: 'images/DBSCertificate.png' }
     },
     {
       company: 'Centro CDX',
