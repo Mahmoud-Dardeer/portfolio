@@ -53,7 +53,8 @@ export class ProjectsComponent {
         'Reporting and analytics dashboard tracking employment status and program impact',
         'Notification system for updates and opportunities with document and profile management'
       ],
-      techStack: ['ASP.NET Core 8 MVC', 'EF Core 8', 'SQL Server', 'ASP.NET Identity', 'jQuery', 'Bootstrap (AdminLTE)', 'AutoMapper']
+      techStack: ['ASP.NET Core 8 MVC', 'EF Core 8', 'SQL Server', 'ASP.NET Identity', 'jQuery', 'Bootstrap (AdminLTE)', 'AutoMapper'],
+      metric: 'Automated skills-to-job matching across 8 modules'
     },
     {
       title: 'Career System',
@@ -101,7 +102,8 @@ export class ProjectsComponent {
         'Payroll generation and clearance handling',
         'Self and manager applicant evaluations'
       ],
-      techStack: ['ASP.NET Core MVC', 'EF Core', 'SQL Server', 'Angular', 'Identity Server']
+      techStack: ['ASP.NET Core MVC', 'EF Core', 'SQL Server', 'Angular', 'Identity Server'],
+      metric: 'Automated payroll generation & clearance'
     },
     {
       title: 'DGPT',
@@ -113,7 +115,8 @@ export class ProjectsComponent {
         'Intelligent conversational flows for domain-specific queries',
         'Secure backend for agent deployment and monitoring'
       ],
-      techStack: ['Azure AI Foundry', 'OpenAI API', '.NET Core', 'Angular']
+      techStack: ['Azure AI Foundry', 'OpenAI API', '.NET Core', 'Angular'],
+      metric: 'Azure AI Foundry + OpenAI API integration'
     },
     {
       title: 'Sarfa',
@@ -139,7 +142,8 @@ export class ProjectsComponent {
         'Dynamic dashboards for package publication and booking approvals',
         'Clean Architecture implementation for scalability'
       ],
-      techStack: ['ASP.NET Core MVC', 'EF Core', 'SQL Server', 'Angular']
+      techStack: ['ASP.NET Core MVC', 'EF Core', 'SQL Server', 'Angular'],
+      metric: 'Built with Clean Architecture for scalability'
     },
     {
       title: 'POS',
@@ -167,7 +171,8 @@ export class ProjectsComponent {
         'Real-time alerts when readings exceed safe thresholds',
         'Health trend dashboards for proactive medical response'
       ],
-      techStack: ['Angular', '.NET Core', 'SQL Server', 'SignalR']
+      techStack: ['Angular', '.NET Core', 'SQL Server', 'SignalR'],
+      metric: 'Real-time medical device alerts via SignalR'
     },
     {
       title: 'pVerify',
@@ -181,7 +186,8 @@ export class ProjectsComponent {
         'Threshold-based alerts notifying nursing staff of critical readings',
         'Patient profile linking for continuous health monitoring across visits'
       ],
-      techStack: ['Angular', '.NET Core', 'SQL Server', 'SignalR']
+      techStack: ['Angular', '.NET Core', 'SQL Server', 'SignalR'],
+      metric: 'Integrated 3+ medical device types'
     },
     {
       title: 'Elagk',
@@ -195,7 +201,8 @@ export class ProjectsComponent {
         'Order tracking with real-time delivery status updates',
         'Pharmacy inventory management and stock alerts'
       ],
-      techStack: ['Angular', '.NET Core', 'SQL Server', 'Firebase']
+      techStack: ['Angular', '.NET Core', 'SQL Server', 'Firebase'],
+      metric: 'Prescription validation + Firebase notifications'
     },
     {
       title: 'Mira',
@@ -209,7 +216,8 @@ export class ProjectsComponent {
         'Delivery scheduling with time slot selection',
         'Rating and review system for products and delivery experience'
       ],
-      techStack: ['Angular', '.NET Core', 'SQL Server', 'Firebase']
+      techStack: ['Angular', '.NET Core', 'SQL Server', 'Firebase'],
+      metric: 'Real-time order tracking via Firebase'
     },
     {
       title: 'A2B',
@@ -239,12 +247,13 @@ export class ProjectsComponent {
         'Inventory tracking for dental supplies and materials',
         'Reporting dashboards with clinic performance metrics'
       ],
-      techStack: ['.NET', 'SQL Server', 'Telerik Reporting']
+      techStack: ['.NET', 'SQL Server', 'Telerik Reporting'],
+      metric: '5 integrated ERP modules + Telerik Reporting'
     },
     {
       title: '3annak',
       subtitle: 'Online Course Platform',
-      company: '3annak App (Freelance)',
+      company: 'Freelance',
       description: 'Built Android and web-based systems for online course registration and order tracking, enabling students to browse, enroll, and manage their learning journey.',
       highlights: [
         'Course catalog with categories, search, and detailed course pages',
@@ -253,7 +262,8 @@ export class ProjectsComponent {
         'Android mobile app for on-the-go course access',
         'Admin panel for managing courses, students, and orders'
       ],
-      techStack: ['Android', '.NET', 'SQL Server']
+      techStack: ['Android', '.NET', 'SQL Server'],
+      metric: 'Shipped native Android app + web platform'
     }
   ];
 
@@ -264,13 +274,22 @@ export class ProjectsComponent {
     return ['All', ...unique];
   }
 
+  companyDuration: Record<string, string> = {
+    'DevopSolution': 'Sep 2024 - Present',
+    'Digital Business Systems (DBS)': 'Sep 2022 - Sep 2024',
+    'Centro CDX': 'Jan 2022 - Sep 2022',
+    'Modawa Medical Co.': 'Nov 2019 - Dec 2021',
+    'Dental Smile Co.': 'Apr 2018 - Oct 2019',
+    'Freelance': 'Oct 2017 - Mar 2018'
+  };
+
   private companyOrder = [
     'DevopSolution',
     'Digital Business Systems (DBS)',
     'Centro CDX',
     'Modawa Medical Co.',
     'Dental Smile Co.',
-    '3annak App (Freelance)'
+    'Freelance'
   ];
 
   get filteredProjects(): Project[] {

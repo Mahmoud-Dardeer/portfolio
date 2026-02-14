@@ -4,12 +4,17 @@
 
     <div class="filter-bar">
       @for (company of companies; track company) {
-        <button
-          class="filter-btn"
-          [class.active]="activeFilter === company"
-          (click)="setFilter(company)">
-          {{ company }}
-        </button>
+        <div class="filter-item">
+          <button
+            class="filter-btn"
+            [class.active]="activeFilter === company"
+            (click)="setFilter(company)">
+            {{ company }}
+          </button>
+          @if (companyDuration[company]) {
+            <span class="filter-duration">{{ companyDuration[company] }}</span>
+          }
+        </div>
       }
     </div>
 
