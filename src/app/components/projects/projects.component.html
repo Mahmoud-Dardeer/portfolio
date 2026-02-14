@@ -1,8 +1,8 @@
 <section class="section" id="projects">
   <div class="container">
-    <h2 class="section-title">Projects</h2>
+    <h2 class="section-title" appAnimateOnScroll>Projects</h2>
 
-    <div class="filter-bar">
+    <div class="filter-bar" appAnimateOnScroll animationDelay="0.2s">
       @for (company of companies; track company) {
         <div class="filter-item">
           <button
@@ -20,7 +20,7 @@
 
     <div class="projects-grid">
       @for (project of filteredProjects; track project.title) {
-        <div class="project-card">
+        <div class="project-card" appAnimateOnScroll>
           <div class="card-header">
             <div class="card-title-row">
               <h3 class="card-title">

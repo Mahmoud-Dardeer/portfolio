@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { AnimateOnScrollDirective } from '../../directives/animate-on-scroll.directive';
 
 interface Service {
   icon: string;
@@ -11,7 +12,7 @@ interface Service {
 @Component({
   selector: 'app-services',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, AnimateOnScrollDirective],
   templateUrl: './services.component.html',
   styleUrl: './services.component.scss'
 })

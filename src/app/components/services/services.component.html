@@ -1,10 +1,10 @@
 <section class="section" id="services">
   <div class="container">
-    <h2 class="section-title">What I Can Help With</h2>
+    <h2 class="section-title" appAnimateOnScroll>What I Can Help With</h2>
 
     <div class="services-grid">
       @for (service of services; track service.title) {
-        <div class="service-card">
+        <div class="service-card" appAnimateOnScroll>
           <div class="service-icon">
             @switch (service.icon) {
               @case ('architecture') {

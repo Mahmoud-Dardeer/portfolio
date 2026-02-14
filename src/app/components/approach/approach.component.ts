@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { AnimateOnScrollDirective } from '../../directives/animate-on-scroll.directive';
 
 interface ApproachItem {
   icon: string;
@@ -11,7 +12,7 @@ interface ApproachItem {
 @Component({
   selector: 'app-approach',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, AnimateOnScrollDirective],
   templateUrl: './approach.component.html',
   styleUrl: './approach.component.scss'
 })

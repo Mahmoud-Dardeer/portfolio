@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { AnimateOnScrollDirective } from '../../directives/animate-on-scroll.directive';
 
 interface Integration {
   name: string;
@@ -11,7 +12,7 @@ interface Integration {
 @Component({
   selector: 'app-integrations',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, AnimateOnScrollDirective],
   templateUrl: './integrations.component.html',
   styleUrl: './integrations.component.scss'
 })

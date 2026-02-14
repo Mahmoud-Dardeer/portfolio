@@ -1,10 +1,10 @@
 <section class="section" id="approach">
   <div class="container">
-    <h2 class="section-title">How I Work</h2>
+    <h2 class="section-title" appAnimateOnScroll>How I Work</h2>
 
     <div class="approach-grid">
       @for (item of approaches; track item.title) {
-        <div class="approach-card">
+        <div class="approach-card" appAnimateOnScroll>
           <div class="card-icon">
             @switch (item.icon) {
               @case ('architecture') {
