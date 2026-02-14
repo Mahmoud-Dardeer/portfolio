@@ -163,6 +163,24 @@
   .projects-grid {
     grid-template-columns: 1fr;
   }
+
+  .card-title-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .card-metric {
+    align-self: flex-start;
+  }
+
+  .project-card {
+    padding: 20px;
+  }
+
+  .card-description {
+    font-size: 0.85rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -173,5 +191,22 @@
   .filter-btn {
     padding: 6px 14px;
     font-size: 0.8rem;
+  }
+
+  .project-card {
+    padding: 16px;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-highlights li {
+    font-size: 0.78rem;
+  }
+
+  .tech-badge {
+    font-size: 0.68rem;
+    padding: 3px 8px;
   }
 }

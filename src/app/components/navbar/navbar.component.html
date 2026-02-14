@@ -12,9 +12,15 @@
           <a [href]="link.href" (click)="closeMobileMenu()">{{ link.label }}</a>
         </li>
       }
+      <li class="mobile-download-wrapper">
+        <a href="Mahmoud_Dardeer_CV.pdf" download class="mobile-download" (click)="closeMobileMenu()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download CV
+        </a>
+      </li>
     </ul>
 
-    <a href="Mahmoud_Dardeer_CV.pdf" download class="nav-download-btn">
+    <a href="Mahmoud_Dardeer_CV.pdf" download class="nav-download-btn desktop-only">
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
       Download CV
     </a>
