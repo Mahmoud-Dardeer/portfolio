@@ -8,7 +8,7 @@ interface Experience {
   period: string;
   points: string[];
   techTags: string[];
-  award?: { label: string; image: string };
+  award?: { label: string; image: string; issuer: string; date: string };
 }
 
 @Component({
@@ -19,10 +19,10 @@ interface Experience {
   styleUrl: './experience.component.scss'
 })
 export class ExperienceComponent {
-  selectedAward: string | null = null;
+  selectedAward: Experience['award'] | null = null;
 
-  openAward(image: string): void {
-    this.selectedAward = image;
+  openAward(award: Experience['award']): void {
+    this.selectedAward = award!;
   }
 
   closeAward(): void {
@@ -51,7 +51,7 @@ export class ExperienceComponent {
         'Contributed to POS retail system and mentored junior developers in gRPC and WPF.'
       ],
       techTags: ['Angular', '.NET Core', 'ZATCA SDK', 'gRPC', 'WPF', 'SAP', 'GemBox'],
-      award: { label: 'Certificate of Appreciation 2023', image: 'images/DBSCertificate.png' }
+      award: { label: 'Certificate of Appreciation 2023', image: 'images/DBSCertificate.png', issuer: 'Digital Business Systems', date: 'March 2024' }
     },
     {
       company: 'Centro CDX',
